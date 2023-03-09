@@ -1,0 +1,17 @@
+stages:
+  - deploy
+    
+Deploy Staging:
+  stage: deploy
+  tags:
+    - asa-staging
+  environment:
+    name: staging
+    url: 77.238.108.125:8081
+  rules:
+    - if: $CI_COMMIT_BRANCH == "develop"
+    - if: $CI_COMMIT_BRANCH == "main"
+  script:
+    - docker network create shared_ext || true
+    - docker compose down
+    - docker compose up -d --build

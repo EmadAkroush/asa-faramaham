@@ -1,0 +1,35 @@
+// Suggested location to add your overrides so that migration would be easy by just updating the SASS folder in the future
+.p-autocomplete-dd,
+.p-calendar-w-btn,
+.p-inputnumber-buttons-stacked {
+    .p-autocomplete-multiple-container,
+    .p-inputtext,
+    .p-inputnumber-input {
+        border-top-right-radius: 8px !important;
+        border-bottom-right-radius: 8px !important;
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+}
+
+.p-calendar-w-btn,
+.p-autocomplete-dd {
+    .p-autocomplete-dropdown,
+    .p-datepicker-trigger {
+        border-radius: var(--border-radius) 0px 0px var(--border-radius) !important;
+    }
+}
+
+.p-inputgroup {
+    flex-direction: row-reverse;
+}
+
+.p-float-label {
+    label {
+        right: 2%;
+    }
+}
+
+.p-image-toolbar{
+    z-index: 5;
+}

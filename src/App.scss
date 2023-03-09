@@ -1,0 +1,13 @@
+.p-toast.p-toast-top-right {
+    z-index: 1000;
+    top: 7rem;
+}
+
+.enter {
+    opacity: 1 !important;
+}
+
+.before-enter {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
